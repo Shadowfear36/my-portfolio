@@ -53,6 +53,16 @@ button {
       background: $prim-clr-d;
     }
   }
+  .skills > * {
+    margin-left: 5px;
+    color: $prim-clr-l;
+    background-color: $sec-clr-l;
+    font-weight: bold;
+
+    &:hover {
+      color: $prim-clr-d;
+    }
+  }
 
 }
 
@@ -84,6 +94,17 @@ button {
 
     &:after {
       background: $prim-clr-l;
+    }
+  }
+
+  .skills > * {
+    margin-left: 5px;
+    color: $prim-clr-d;
+    background-color: $sec-clr-d;
+    font-weight: bold;
+
+    &:hover {
+      color: $prim-clr-l;
     }
   }
 }
@@ -236,6 +257,18 @@ input[type=checkbox]:checked + .toggle:after {
 
 .rotateGrow {
   animation: rotateGrow 2s ease-in-out;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skills > * {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 0px 0px 2px black;
 }
 
 

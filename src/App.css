@@ -108,6 +108,15 @@ button {
 .light .toggle:after {
   background: #A6BB8D;
 }
+.light .skills > * {
+  margin-left: 5px;
+  color: #BDCDD6;
+  background-color: #6096B4;
+  font-weight: bold;
+}
+.light .skills > *:hover {
+  color: #A6BB8D;
+}
 
 .dark .text {
   color: #A6BB8D;
@@ -133,6 +142,15 @@ button {
 }
 .dark .toggle:after {
   background: #BDCDD6;
+}
+.dark .skills > * {
+  margin-left: 5px;
+  color: #A6BB8D;
+  background-color: #3C6255;
+  font-weight: bold;
+}
+.dark .skills > *:hover {
+  color: #BDCDD6;
 }
 
 .centered {
@@ -269,4 +287,16 @@ input[type=checkbox]:checked + .toggle:after {
 
 .rotateGrow {
   animation: rotateGrow 2s ease-in-out;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skills > * {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 0px 0px 2px black;
 }/*# sourceMappingURL=App.css.map */

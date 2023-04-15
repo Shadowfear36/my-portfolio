@@ -21,6 +21,13 @@ function App() {
               <h3 className="text fadeIn-3 margin-top-btm-0">Nice To Meet You, My Name Is</h3>
               <h2 className="slideUp font-md anim-text margin-top-btm-0">Dylan Rhinehart</h2>
               <h4 className="text growUp font-sm margin-top-btm-0">FullStack Software Engineer 💻</h4>
+              <div className="centered-row pad-all-2 skills">
+                <button>Ruby</button>
+                <button>Javascript</button>
+                <button>React</button>
+                <button>Express.js</button>
+                <button>Rails</button>
+              </div>
             </div>
           </div>
           <div className="btm-rgt">
