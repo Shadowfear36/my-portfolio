@@ -137,7 +137,7 @@ button {
   text-shadow: 1px 1px 1px black;
 }
 .dark .background {
-  background: linear-gradient(-45deg, #A6BB8D, #3C6255, #A6BB8D, #3C6255);
+  background: linear-gradient(-45deg, #61876E, #3C6255, #61876E, #3C6255);
   background-size: 900% 900%;
   animation: gradient 15s ease infinite;
   height: 100vh;

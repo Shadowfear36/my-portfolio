@@ -76,7 +76,7 @@ button {
 
   }
   .background {
-    background: linear-gradient(-45deg, $prim-clr-d, $sec-clr-d, $prim-clr-d, $sec-clr-d);
+    background: linear-gradient(-45deg, $b-clr-d, $sec-clr-d, $b-clr-d, $sec-clr-d);
 	  background-size: 900% 900%;
 	  animation: gradient 15s ease infinite;
     height: 100vh;
