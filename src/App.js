@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsFillFolderSymlinkFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import pfp from './images/pfp.JPG';
 
@@ -20,7 +20,7 @@ function App() {
               <h1 className="text title">Hello</h1>
               <h3 className="text fadeIn-3 margin-top-btm-0">Nice To Meet You, My Name Is</h3>
               <h2 className="slideUp font-md anim-text margin-top-btm-0">Dylan Rhinehart</h2>
-              <h4 className="text growUp font-sm margin-top-btm-0">FullStack Software Engineer 💻</h4>
+              <h4 className="text growUp font-sm margin-top-btm-0">💻 FullStack Software Engineer 💻</h4>
               <div className="centered-row pad-all-2 skills">
                 <button>Ruby</button>
                 <button>Javascript</button>
@@ -29,6 +29,8 @@ function App() {
                 <button>Rails</button>
                 <button>SASS</button>
               </div>
+                <button className="left-mid fadeInControls">🖥️<br/> Demos</button>
+                <button className="right-mid fadeInControls">📄<br/>Docs</button>
             </div>
           </div>
           <div className="btm-rgt">

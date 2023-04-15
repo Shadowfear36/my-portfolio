@@ -136,6 +136,14 @@ button {
     height: 150px;
     width: 150px;
   }
+  .right-mid {
+    top: 10% !important;
+    bottom: 90% !important;
+  }
+  .left-mid {
+    top: 10% !important;
+    bottom: 90% !important;
+  }
 }
 
 .centered {
@@ -228,6 +236,10 @@ input[type=checkbox]:checked + .toggle:after {
   animation: fadeIn 3s ease-in-out;
 }
 
+.fadeInControls {
+  animation: fadeIn 10s ease;
+}
+
 .slideUp {
   animation: slideUp 3s ease;
 }
@@ -298,6 +310,33 @@ input[type=checkbox]:checked + .toggle:after {
   flex-direction: column;
   justify-content: center;
   text-shadow: 0px 0px 2px black;
+}
+
+.left-mid{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  bottom: 50%;
+  height: 65px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.right-mid{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  bottom: 50%;
+  height: 65px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  font-weight: 900;
 }
 
 
