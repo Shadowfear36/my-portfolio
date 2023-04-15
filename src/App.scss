@@ -1,65 +1,6 @@
-@keyframes skew {
-  0% {
-    transform: skewX(20deg);
-  }
-  100% {
-    transform: skewX(-20deg);
-  }
-}
-@keyframes slideIn {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0%;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 100%;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes slideUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0%;
-  }
-  60% {
-    opacity: 100%;
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-@keyframes textShine {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@keyframes growUp {
-  0% {
-    scale: 0%;
-  }
-  100% {
-    scale: 100%;
-  }
-}
-@keyframes rotateGrow {
-  0% {
-    transform: translateX(-500px) rotate(0deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(720deg);
-  }
-}
+@import './variables/variables';
+@import './animations/animation';
+
 html {
   margin: 0px;
   padding: 0px;
@@ -68,45 +9,53 @@ html {
 body {
   padding: 0;
   margin: 0;
-}
+} 
 
 h1 {
-  margin: 0px;
+  margin: 0px; 
   padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
-  border-radius: 10px;
+  border-radius: $bdr-radius;
   padding: 1em;
   border: 2px black solid;
-  box-shadow: -3px 3px 5px black;
+  box-shadow : -3px 3px 5px black;
 }
 
-.light .text {
-  color: #BDCDD6;
-  text-shadow: 1px 1px 1px black;
-}
-.light .background {
-  background-color: #6096B4;
-  height: 100vh;
-}
-.light button {
-  background-color: #3C6255;
-  color: #A6BB8D;
+.light {
+  .text {
+    color: $prim-clr-l;
+    text-shadow: 1px 1px 1px black;
+  }
+  .background {
+    background-color: $sec-clr-l;
+    height: 100vh;
+  }  
+  button {
+    background-color: $sec-clr-d;
+    color: $prim-clr-d;
+  }
+
+
 }
 
-.dark .text {
-  color: #A6BB8D;
-  text-shadow: 1px 1px 1px black;
-}
-.dark .background {
-  background-color: #3C6255;
-  height: 100vh;
-}
-.dark button {
-  background-color: #6096B4;
-  color: #BDCDD6;
+.dark {
+  .text {
+    color: $prim-clr-d;
+    text-shadow: 1px 1px 1px black;
+
+  }
+  .background {
+    background-color: $sec-clr-d;
+    height: 100vh;
+  }
+
+  button {
+    background-color: $sec-clr-l;
+    color: $prim-clr-l;
+  }
 }
 
 .centered {
@@ -137,9 +86,10 @@ button {
   animation: slideIn 2s ease-in-out;
 }
 
+
 .toggle {
   position: absolute;
-  left: 10px;
+  left: 10px; 
   top: 10px;
 }
 
@@ -162,11 +112,17 @@ button {
 }
 
 .font-md {
-  font-size: 3rem;
+  font-size: $size-md;
 }
 
 .anim-text {
-  background: linear-gradient(to right, #A6BB8D 20%, #A6BB8D 30%, #3C6255 70%, #6096B4 80%);
+  background: linear-gradient(
+    to right,
+    $prim-clr-d 20%,
+    $prim-clr-d 30%,
+    $sec-clr-d 70%,
+    $sec-clr-l 80%
+  );
   margin-top: 0px;
   padding-top: 5px;
   -webkit-background-clip: text;
@@ -201,4 +157,10 @@ button {
 
 .rotateGrow {
   animation: rotateGrow 2s ease-in-out;
-}/*# sourceMappingURL=App.css.map */
+}
+
+
+
+
+
+
