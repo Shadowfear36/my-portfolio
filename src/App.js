@@ -14,7 +14,7 @@ function App() {
         <label className="toggle" htmlFor="switch">
         </label>
         <div className="centered-col full">
-          <div className="centered-row pad-all-5">
+          <div className="centered-row pad-all-5 mob-col">
             <img src={pfp} className="pfp rotateGrow"/>
             <div>
               <h1 className="text title">Hello</h1>
@@ -27,6 +27,7 @@ function App() {
                 <button>React</button>
                 <button>Express.js</button>
                 <button>Rails</button>
+                <button>SASS</button>
               </div>
             </div>
           </div>
