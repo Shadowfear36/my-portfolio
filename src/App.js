@@ -10,9 +10,9 @@ function App() {
   return (
     <div className={theme}>
       <div className="background centered">
-        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="toggle">
-          Toggle Theme
-        </button>
+        <input type='checkbox' id="switch" className="check" onClick={() => setTheme(theme === "light" ? "dark" : "light")}/>
+        <label className="toggle" htmlFor="switch">
+        </label>
         <div className="centered-col full">
           <div className="centered-row pad-all-5">
             <img src={pfp} className="pfp rotateGrow"/>
@@ -20,13 +20,13 @@ function App() {
               <h1 className="text title">Hello</h1>
               <h3 className="text fadeIn-3 margin-top-btm-0">Nice To Meet You, My Name Is</h3>
               <h2 className="slideUp font-md anim-text margin-top-btm-0">Dylan Rhinehart</h2>
-              <h4 className="text growUp font-sm margin-top-btm-0">FullStack Software Engineer</h4>
+              <h4 className="text growUp font-sm margin-top-btm-0">FullStack Software Engineer 💻</h4>
             </div>
           </div>
           <div className="btm-rgt">
-              <a href="https://github.com/Shadowfear36"><BsGithub size={35}/></a>
-              <a href="https://www.linkedin.com/in/dylan-rhinehart/"><BsLinkedin size={35}/></a>
-              <a href="mailto:dylanrhinehart@gmail.com"><MdEmail size={40}/></a>
+              <a href="https://github.com/Shadowfear36" className="link"><BsGithub size={35}/></a>
+              <a href="https://www.linkedin.com/in/dylan-rhinehart/" className="link"><BsLinkedin size={35}/></a>
+              <a href="mailto:dylanrhinehart@gmail.com" className="link"><MdEmail size={40}/></a>
           </div>
         </div>
       </div>

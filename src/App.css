@@ -95,6 +95,19 @@ button {
   background-color: #3C6255;
   color: #A6BB8D;
 }
+.light .link {
+  color: #BDCDD6;
+  margin-left: 5px;
+}
+.light .link:hover {
+  color: #A6BB8D;
+}
+.light .toggle {
+  background-color: #3C6255;
+}
+.light .toggle:after {
+  background: #A6BB8D;
+}
 
 .dark .text {
   color: #A6BB8D;
@@ -107,6 +120,19 @@ button {
 .dark button {
   background-color: #6096B4;
   color: #BDCDD6;
+}
+.dark .link {
+  color: #A6BB8D;
+  margin-left: 5px;
+}
+.dark .link:hover {
+  color: #BDCDD6;
+}
+.dark .toggle {
+  background-color: #6096B4;
+}
+.dark .toggle:after {
+  background: #BDCDD6;
 }
 
 .centered {
@@ -141,6 +167,45 @@ button {
   position: absolute;
   left: 10px;
   top: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  display: block;
+  border-radius: 100px;
+}
+.toggle:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 18px;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.check {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  height: 25px;
+  width: 50px;
+  display: none;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked + .toggle:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle:active:after {
+  transform: translateX(300%);
 }
 
 .full {
@@ -186,6 +251,9 @@ button {
   position: absolute;
   right: 10px;
   bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .pfp {

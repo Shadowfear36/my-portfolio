@@ -37,7 +37,22 @@ button {
     background-color: $sec-clr-d;
     color: $prim-clr-d;
   }
+  .link {
+    color: $prim-clr-l;
+    margin-left: 5px;
 
+    &:hover {
+      color: $prim-clr-d;
+    }
+  }
+
+  .toggle {
+    background-color: $sec-clr-d;
+
+    &:after {
+      background: $prim-clr-d;
+    }
+  }
 
 }
 
@@ -55,6 +70,21 @@ button {
   button {
     background-color: $sec-clr-l;
     color: $prim-clr-l;
+  }
+  .link {
+    color: $prim-clr-d;
+    margin-left: 5px;
+    &:hover {
+      color: $prim-clr-l;
+    }
+  }
+
+  .toggle {
+    background-color: $sec-clr-l;
+
+    &:after {
+      background: $prim-clr-l;
+    }
   }
 }
 
@@ -91,7 +121,53 @@ button {
   position: absolute;
   left: 10px; 
   top: 10px;
+  cursor: pointer;
+	width: 50px;
+	height: 25px;
+	display: block;
+	border-radius: 100px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 18px;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
 }
+
+.check {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  height: 25px;
+  width: 50px;
+  display: none;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+
+// input[type=checkbox]:checked + .toggle {
+// 	background: $prim-clr-l;
+// }
+
+input[type=checkbox]:checked + .toggle:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.toggle:active:after {
+	transform: translateX(300%);
+}
+
+
 
 .full {
   width: 100%;
@@ -142,6 +218,9 @@ button {
   position: absolute;
   right: 10px;
   bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .pfp {
